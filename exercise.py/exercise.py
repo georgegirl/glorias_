@@ -183,6 +183,7 @@
 
 # print_bawo(x)
 
-greeting = "good day!"
-len[greeting]
+# greeting = "good day!"
+# len[greeting]
 
+# def right_justify(s):
