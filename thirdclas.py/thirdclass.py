@@ -20,3 +20,7 @@ print(joined)
 str_long = ("the earth rotates round the sun")
 joined = "    ".join(str_long)
 print(joined)
+
+
+sentence_1= "i am learning python"
+print(sentence_1.replace())

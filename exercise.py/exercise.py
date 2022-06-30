@@ -78,10 +78,10 @@
 
 
 
-# # # def gloria8(f):
-# # #     return "hola"
-# # # a = gloria8("english")
-# # # print(a)
+def gloria8(f):
+    return "hola"
+a = gloria8("english")
+print(a)
 
 
 # # # def tomorrow_never_waits(c):
@@ -112,55 +112,55 @@
 
 # greet("pedrol")
 # greet("gloria")
-# greet("jonathan") 
-# greet("lopez")
+# # greet("jonathan") 
+# # greet("lopez")
 
 
-# name = "golandos" #as a variable given a value
-# greet(name)
+# # name = "golandos" #as a variable given a value
+# # greet(name)
 
-# def print_twice(gloria): #note wen giving a definition you dont use quotation
-#     print(gloria)
-#     print(gloria)
+# # def print_twice(gloria): #note wen giving a definition you dont use quotation
+# #     print(gloria)
+# #     print(gloria)
 
-# print_twice("bruce")
-# import math
-# from unittest import result
+# # print_twice("bruce")
+# # import math
+# # from unittest import result
 
-# print_twice(math.pi*2)
+# # print_twice(math.pi*2)
 
-# print_twice("gloria george"*4)
-
-
-# pluto = "the time has come" 
-# print_twice(pluto)
-
-# def cat_twice(part1, part2):
-#     cat = part1 + part2
-#     print_twice(cat)
-
-# line2 = "the glory of the lord is with me, "
-# line3 = "i will dance like david dance."
-# cat_twice(line2, line3)
-
-# x = math.cos(r)
-# golden = (math.sqrt(5) +1) / 2
-
-# math.sqrt(5) #be like say na viod function be this
-# print(result)
-
-# type(None)
+# # print_twice("gloria george"*4)
 
 
-# def right_justfy(s):
-#     print(yours,faithfully)
-# yours, faithfully)
-# print(
+# # pluto = "the time has come" 
+# # print_twice(pluto)
 
-# print(x)
-# x = "yours faithfully"
+# # def cat_twice(part1, part2):
+# #     cat = part1 + part2
+# #     print_twice(cat)
 
-# print(x*len(4))
+# # line2 = "the glory of the lord is with me, "
+# # line3 = "i will dance like david dance."
+# # cat_twice(line2, line3)
+
+# # x = math.cos(r)
+# # golden = (math.sqrt(5) +1) / 2
+
+# # math.sqrt(5) #be like say na viod function be this
+# # print(result)
+
+# # type(None)
+
+
+# # def right_justfy(s):
+# #     print(yours,faithfully)
+# # yours, faithfully)
+# # print(
+
+# # print(x)
+# # x = "yours faithfully"
+
+# # print(x*len(4))
 
 # def print_bawo(x):
 #     print("its not you")
@@ -181,9 +181,52 @@
 # print_bawo(" destiny")
 # print_bawo(" sapa")
 
-# print_bawo(x)
+# # print_bawo(x)
 
-# greeting = "good day!"
-# len[greeting]
+# # greeting = "good day!"
+# # len[greeting]
 
-# def right_justify(s):
+# # def right_justify(s):
+ 
+ #assignments
+ question 1
+
+num_1= int(input("enter first number"))
+num_2= int(input("enter second number"))
+num_3= int(input("enter third number"))
+add= num_1+ num_2+ num_3
+average = add / 3
+print("Average = ", average)
+
+list1= (40, 20,60)
+sum_of_element = sum(list1)
+len_of_list1 = len(list1)
+avg = sum_of_element/len_of_list1 
+print("average of given number in list is", avg)
+
+
+
+list1= (40, 20,60)
+# sum_of_element = sum(list1)
+# len_of_list1 = len(list1)
+# avg = sum_of_element/len_of_list1 
+# print("average of given number in list is", avg)
+
+
+
+# # print("average of three numbers= %.3f" %avg)
+# # print(avg)
+# print("avg = ", average)
+
+
+# may delete
+# num_given= int(input("how many numbers ?"))
+# total_sum= 0
+
+# for n in range (num_given):
+#     numbers= int(input("enter any number"))
+#     total_sum += numbers
+
+# avg = total_sum / numbers
+# print("average is :", avg)
+
