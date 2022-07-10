@@ -1,65 +1,75 @@
-#question 1
-num_1= int(input("enter first number: "))
-num_2= int(input("enter second number: "))
-num_3= int(input("enter third number: "))
-add= num_1+ num_2+ num_3
-average = add / 3
-print("Average = ", average)
+# #question 1
+# num_1= int(input("enter first number: "))
+# num_2= int(input("enter second number: "))
+# num_3= int(input("enter third number: "))
+# add= num_1+ num_2+ num_3
+# average = add / 3
+# print("Average = ", average)
 
 
-# #QUESTION 2
+# # #QUESTION 2
 
-MY_USER= "if the sun can wake up every morning and warm the earth so can i"
+# MY_USER= "if the sun can wake up every morning and warm the earth so can i"
 
-print(MY_USER.title())
-
-
-# #QUESTION 3
-
-sentence_1= "I am learning python"
-b= sentence_1.replace("I", "you")
-print(b)
-
-#"OR"
-
-a= "i"
-b= " am"
-c= " learning"
-d= " python"
-
-long_1=(a +  b +  c  +  d)
-print(long_1)
-re= a.replace("i", "you")
-print(re + b + c + d)
+# print(MY_USER.capitalize())
 
 
-# #QUESTION 4
+# # #QUESTION 3
+
+# sentence_1= "I am learning python"
+# b= sentence_1.replace("I", "you")
+# print(b)
+
+# #"OR"
+
+# a= "i"
+# b= " am"
+# c= " learning"
+# d= " python"
+
+# long_1=(a +  b +  c  +  d)
+# print(long_1)
+# re= a.replace("i", "you")
+# print(re + b + c + d)
 
 
-STRING_2= "I hope i had fun today in class :("
-print(STRING_2.count("A"))
+# # #QUESTION 4
 
 
-
-
-#question 5
-def check_fermat(a, b,c, n):
-    if n>2 and (a**n + b**n)== c**n:
-        print("holy smokes, fermat was wrong")
-    else:
-        print("no, that doesn't work")
-
-print(check_fermat(5, 5, 4, 9))
+# STRING_2= "I hope i had fun today in class :("
+# print(STRING_2.count("A"))
 
 
 
-#q
-def check_number():
-    a= int(input("first number for a: "))
-    b= int(input("second number for b: "))
-    c= int(input("third number for c: "))
-    n= int(input("fourth number for n: "))
-    return check_fermat(a,b, c, n)
+
+# #question 5
+# def check_fermat(a, b,c, n):
+#     if n>2 and (a**n + b**n)== c**n:
+#         print("holy smokes, fermat was wrong")
+#     else:
+#         print("no, that doesn't work")
+
+# print(check_fermat(5, 5, 4, 9))
+
+
+
+# #question 6
+# def check_number():
+#     a= int(input("first number for a: "))
+#     b= int(input("second number for b: "))
+#     c= int(input("third number for c: "))
+#     n= int(input("fourth number for n: "))
+#     return check_fermat(a,b, c, n)
+
+
+
+
+user =input("enter your sentence: ")
+a= user.split()
+a[0] = a[0].upper()
+print(a)
+print(a)
+print(" ".join(a))
 
 
 
