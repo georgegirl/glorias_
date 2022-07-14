@@ -53,13 +53,17 @@
 
 
 
+
+
 # #question 6
 # def check_number():
 #     a= int(input("first number for a: "))
 #     b= int(input("second number for b: "))
 #     c= int(input("third number for c: "))
 #     n= int(input("fourth number for n: "))
-#     return check_fermat(a,b, c, n)
+#     
+# check_fermat(a,b, c, n)
+# check_number()
 
 
 

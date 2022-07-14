@@ -106,8 +106,6 @@ print(list_2)
 
 
 
-#6th class
-#CLASSWORK
 
 
 

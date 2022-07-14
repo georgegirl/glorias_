@@ -102,18 +102,18 @@
 # # print_twice()
 
 
-# # # def print_twice(spam):
-# # #     print(spam)
-# # #     print(spam)
+# def print_twice(spam):
+#     print(spam)
+#     print(spam)
 
-# # def greet(name):
-# #     print("hey baby")
-# #     print("how your day going,"+ name)
+def greet(name):
+    print("hey baby")
+    print("how your day going,"+ name)
 
-# # greet("pedrol")
-# # greet("gloria")
-# # # greet("jonathan") 
-# # # greet("lopez")
+greet("pedrol")
+greet("gloria")
+greet("jonathan") 
+greet("lopez")
 
 
 # # # name = "golandos" #as a variable given a value
@@ -233,9 +233,9 @@ list1= (40, 20,60)
 
 
 
-# pynative
-def long_man(*I): 
-    for i in I:
-        print(i)
+# # pynative
+# def long_man(*I): 
+#     for i in I:
+#         print(i)
 
-long_man(5,6,4,9)
+# long_man(5,6,4,9)
