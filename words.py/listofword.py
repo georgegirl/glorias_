@@ -1,0 +1,10 @@
+peacemaker
+woman
+gloria
+indomie
+lacuna
+dipose
+eliminate
+judge
+gate
+time
