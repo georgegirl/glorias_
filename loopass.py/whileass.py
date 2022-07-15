@@ -34,6 +34,7 @@ def main(): # putting the codes into procedures, this my main code
                 num_guess = com_choice.find(guess, n)
                 n = com_choice.find(guess, n) #n represent the location of the letter guessed correctly in the word
                 display = display[:n] + guess + display[n + 1:]
+                
                 n += 1
                 print("correct")
                 point = point + 1
@@ -46,9 +47,12 @@ def main(): # putting the codes into procedures, this my main code
             point -=1
         if tries == 0:
                 print("YOUR ATTEMPT HAS BEEN USED UP")
+                print("GAME OVER")
+                break
             
         if point == 0:
                 print("YOU LOST ALL YOUR POINT")
+                break
 
                         
         if com_choice == display:
@@ -66,6 +70,7 @@ def main(): # putting the codes into procedures, this my main code
             else:
                 print("RESTARTING GAME, {} ".format(user_input).capitalize)
              # this reruns the game to the beginning
+                main()
                 game_over= True
 main()
             
