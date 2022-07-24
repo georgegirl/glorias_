@@ -28,17 +28,17 @@ account_num= whole + account
 
 
 
-def generate_pin():
-    number="0123456789"
-    whole="0"
-    string= whole + number
-    length= 4
-    account= "".join(random.sample(string, length))
-    pin = whole + account
-    token = pin
-    return token
+# def generate_pin():
+#     number="0123456789"
+#     whole="0"
+#     string= whole + number
+#     length= 4
+#     account= "".join(random.sample(string, length))
+#     pin = whole + account
+#     token = pin
+#     return token
 
-transaction_pin= generate_pin()
+# transaction_pin= generate_pin()
 
 program = False
 
@@ -51,7 +51,7 @@ while not program:
         if account in data.keys():
             print ("welcome", data[account]["first_name"], data[account]["second_name"])
             login_pin=input("enter your login pin: ")
-            print("Dear {}, Do Well To Remember ".format(info))
+            print("Dear user, Do Well To Remember.g ")
             if login_pin == data[account]["login_pin"]: 
                 options= int(input("what service would you like?\n1. Withdrawal \n2. Deposit \n3. Check balance\n4. Transfer\n"))
                 choice = [1,2,3,4]
@@ -87,16 +87,18 @@ while not program:
                             # continue1()/
                         else:
                             print("incorrect pin")
-                            # continue1()
+                            
 
                     elif options == 3:
                         log= input("enter transaction pin: ")
+                        custom_fee= 50
                         if log == pin:
+                            data[account]["balance"]-= custom_fee
                             print("$", data[account]["balance"])
-                            # continue1()
+                            
                         else:
                             print("incorrect pin")
-                            # continue1()
+                            
 
 
                     elif options == 4:
@@ -108,7 +110,7 @@ while not program:
                                 data[user]["balance"]+= amount
                                 data[account]["balance"]-=amount
                                 print('$',amount, 'Has Been Transferred to',user, data[user]["first_name"], data[user]["second_name"])
-                                # continue1()
+                                
                             else:
                                 print("incorrect pin")
                                 # continue1()
@@ -148,9 +150,9 @@ while not program:
             data[intro]["first_name"]= info
             info2= input("State your second_name: ")
             data[intro]['second_name']= info2
-            info3= input('Enter transaction acct: ')
+            info3= input('Enter 4 digits\ntransaction acct: ')
             data[intro]["transaction_pin"]= info3
-            info4= input("Set login pin: ")
+            info4= input("Enter 4 digits\nSet login pin: ")
             data[intro]["login_pin"]=info4
 
 
@@ -179,6 +181,7 @@ while not program:
         print("Bye For Now")
         break
 
+program= True
 
     
 
