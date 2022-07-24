@@ -87,4 +87,10 @@ while a > 0:
     count += 1
     if count == 3:
       break
-
+# d = {"name": "grace",
+#      "course": "backend",
+#      "score": [10,2,50,56],
+#     "address": {"str_num": 2,
+#               "str_name": "montegomerty road",
+#               "city": "yaba"}
+# }

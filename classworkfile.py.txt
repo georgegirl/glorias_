@@ -1,0 +1,4 @@
+standard_d: 6.159
+ Variance: 37.938
+ median: 80.0
+ mean: 80.75
