@@ -51,7 +51,7 @@ while not program:
         if account in data.keys():
             print ("welcome", data[account]["first_name"], data[account]["second_name"])
             login_pin=input("enter your login pin: ")
-            print("Dear user, Do Well To Remember.g ")
+            print("Dear user, Do Well To Remember your login pin ")
             if login_pin == data[account]["login_pin"]: 
                 options= int(input("what service would you like?\n1. Withdrawal \n2. Deposit \n3. Check balance\n4. Transfer\n"))
                 choice = [1,2,3,4]
