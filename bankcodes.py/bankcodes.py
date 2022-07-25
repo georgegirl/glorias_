@@ -13,9 +13,6 @@ import random
 print("Welcome to The George's Bank ")
 print("The passion of banking")
 
-# with open("databasecodes.txt", "r") as in_put:
-#     data = eval(in_put.read())
-
 data= {}
 
 
@@ -50,21 +47,21 @@ while not program:
         account =str(input("Give Your Account Number: "))
         if account in data.keys():
             print ("welcome", data[account]["first_name"], data[account]["second_name"])
-            login_pin=input("enter your login pin: ")
+            login_pin=input("Enter Your login pin: ")
             print("Dear user, Do Well To Remember your login pin ")
             if login_pin == data[account]["login_pin"]: 
-                options= int(input("what service would you like?\n1. Withdrawal \n2. Deposit \n3. Check balance\n4. Transfer\n"))
+                options= int(input("what service would you like?\n1. Withdrawal \n2. Deposit \n3. Check balance\n4. Transfer\n>>>>"))
                 choice = [1,2,3,4]
 
                 if options in choice:
                     pin = data[account]["transaction_pin"]
                     if options == 1:
-                        log= input("enter transaction pin: ")
+                        log= input("Enter transaction pin: ")
                         if log == pin:
-                            withdraw_1= int(input("enter amount to be withdrawn: "))
+                            withdraw_1= int(input("Enter amount to be withdrawn: "))
                             balan_ = data[account]["balance"]
                             if withdraw_1 > balan_:
-                                print("insufficient balance")
+                                print("Insufficient balance")
                                 print("You have {} remaining".format(balan_))
                                 continue_OH = int(input("Do you wish to:\n.1. back menu \n2. log out"))
                                 
@@ -81,16 +78,16 @@ while not program:
                     elif options == 2:
                         log= input("Enter Transaction Pin: ")
                         if log == pin:
-                            depo_= int(input(" enter amount: "))
+                            depo_= int(input("Enter amount: "))
                             data[account]["balance"]+= depo_
                             print("Current balance is ${}".format(data[account]["balance"]))
                             # continue1()/
                         else:
-                            print("incorrect pin")
+                            print("Incorrect pin")
                             
 
                     elif options == 3:
-                        log= input("enter transaction pin: ")
+                        log= input("Enter transaction pin: ")
                         custom_fee= 50
                         if log == pin:
                             data[account]["balance"]-= custom_fee
