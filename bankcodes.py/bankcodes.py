@@ -25,18 +25,6 @@ account_num= whole + account
 
 
 
-# def generate_pin():
-#     number="0123456789"
-#     whole="0"
-#     string= whole + number
-#     length= 4
-#     account= "".join(random.sample(string, length))
-#     pin = whole + account
-#     token = pin
-#     return token
-
-# transaction_pin= generate_pin()
-
 program = False
 
 with open("databasecodes.txt", "r") as in_put:
@@ -94,7 +82,7 @@ while not program:
                             print("$", data[account]["balance"])
                             
                         else:
-                            print("incorrect pin")
+                            print("Incorrect pin")
                             
 
 
@@ -110,13 +98,13 @@ while not program:
                                 
                             else:
                                 print("incorrect pin")
-                                # continue1()
+                                
                         else:
                             print("user not found")
                             break
                 else:
                     print("invalid input")
-                    break
+                    
 
                 with open("databasecodes.txt", "w") as in_put:
                     in_put.write(str(data))
@@ -124,12 +112,12 @@ while not program:
 
             else: 
                 print("incorrect pin") 
-                # continue1() 
+                
 
 
         else:
             print("user not found")
-            # continue1()
+            
     
     
     elif start == "no":
@@ -143,9 +131,9 @@ while not program:
                                     "transaction_pin": " ",
                                     "balance": 30000
                                       }})
-            info = input("State your first_name: ")
+            info = input("State your first_name: ").capitalize()
             data[intro]["first_name"]= info
-            info2= input("State your second_name: ")
+            info2= input("State your second_name: ").capitalize()
             data[intro]['second_name']= info2
             info3= input('Enter 4 digits\ntransaction acct: ')
             data[intro]["transaction_pin"]= info3
@@ -162,7 +150,7 @@ while not program:
                 in_put.write(str(data))
 
     else:
-        print("invalid input")
+        print("Invalid input")
 
 
     continue_OH = int(input("Do you wish to:\n1. back menu \n2. log out\n"))
@@ -175,6 +163,7 @@ while not program:
         break
 
     else:
+        print("Invalid input")
         print("Bye For Now")
         break
 
