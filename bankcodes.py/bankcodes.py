@@ -168,21 +168,3 @@ while not program:
         break
 
 program= True
-
-    
-
-    
-        
-                            
-
-
-                        
-                
-
-
-
-        
-
-
-
-

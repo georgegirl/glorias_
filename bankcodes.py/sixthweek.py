@@ -25,8 +25,6 @@ class Georges():
     def shape(self):
         return f"The Dog of {self.breed}  breed's tend to look fat."
 
-
-
 #0
 dog1 = Georges("german shepherd", "black", 20)
 #1
