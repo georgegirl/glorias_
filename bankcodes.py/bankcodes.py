@@ -117,6 +117,7 @@ while not program:
 
         else:
             print("user not found")
+            break
             
     
     
@@ -161,7 +162,6 @@ while not program:
         print("Thank You For Banking With The George's ")
         print("Till Next Time")
         break
-
     else:
         print("Invalid input")
         print("Bye For Now")

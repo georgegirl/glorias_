@@ -135,7 +135,7 @@ class Pet:
 
 class Dog(Pet):
     '''provides info on the dog class. note this is a subclass for pet'''
-    def __inti__(self, name, age, colour):
+    def __init__(self, name, age, colour):
         super().__init__(name, age)
         self.colour = colour # why is this not functioning
         
@@ -162,7 +162,7 @@ c = Cat("Allison", 30)
 c.show()
 
 d = Dog("George", 60, "brown")
-print(d.show())
+d.show()
 
 
 # p.speak()
