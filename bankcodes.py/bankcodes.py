@@ -57,11 +57,11 @@ while not program:
                                 data[account]["balance"]-= withdraw_1
                                 print("You have been debited {}".format(withdraw_1))
                                 print("Your New Balance is $", data[account]['balance'])
-                                # continue1():
+                                
 
                         else:
                             print("incorrect pin")
-                            # continue1()
+                            
 
                     elif options == 2:
                         log= input("Enter Transaction Pin: ")
@@ -101,9 +101,10 @@ while not program:
                                 
                         else:
                             print("user not found")
-                            break
+                            
                 else:
                     print("invalid input")
+                    break
                     
 
                 with open("databasecodes.txt", "w") as in_put:

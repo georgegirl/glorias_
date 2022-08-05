@@ -31,6 +31,9 @@ dog1 = Georges("german shepherd", "black", 20)
 dog2 = Georges("bull dog", "brown", 40)
 
 
+#toget the date 
+# datetime.now()
+
 # print(dog1 +dog2) # this is a magic method
 
 # print(dog1) #this prints out 0

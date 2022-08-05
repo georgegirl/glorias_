@@ -21,21 +21,24 @@ def main(): # putting the codes into procedures, this my main code
     game_over = False
     print(com_choice)
 
-
+    print(display)
+    
     while not game_over:
-        print(display)
+
         print("guess the word :) :) ")
         print("YOU HAVE" + " " + str (tries) + " "  +"TRIES" +  " " + "REMAINING" )
         print(str(point) + " " + "POINTS" + " " + "ALLOCATED")
         guess = input("INPUT LETTER: ").lower()
-    
+        
         if guess in com_choice:
             while com_choice.find(guess, n) != -1:
                 num_guess = com_choice.find(guess, n)
                 n = com_choice.find(guess, n) #n represent the location of the letter guessed correctly in the word
-                display = display[:n] + guess + display[n + 1:]
-                
+                display1 = display[:n] + guess + display[n + 1:]
+                display = display1
+                print(display)
                 n += 1
+ 
                 print("correct")
                 point = point + 1
                 print("YOU GET AN EXTRA 1 POINT")
