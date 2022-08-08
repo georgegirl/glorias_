@@ -2,17 +2,9 @@ import random
 
 with open("class.txt", "r") as file:
     data = eval(file.read())
-
-
-
-import random
-
-with open("bank_db.txt") as file:
-    data = eval(file.read())
 with open("trans.txt") as file:
     trans_data = eval(file.read())
     
-
 def signup(details : dict, trans:dict):
     """ This function takes in a dictionary, asks the user for input details then generates a random account number for the user. It then adds the user data to the original dictionary and returns the updated dictionary. """
     
