@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat', sans-serif;
+
+}
+
+body, html{
+    background-image: url(./images/pexels-dima-valkov-5665691.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 10%;
+background-color:#FACA64;
+}
+
+#logo{
+    font-family:'DynaPuff', 'cursive';
+    text-decoration: none;
+    color: #502a01;
+    font-size: 35px;
+    
+}
+
+.link a {
+text-decoration: none;
+color: #2D1700;
+padding: 5px 10px;
+font-size: 18px;
+font-weight: 500;
+
+}
+
+nav button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #FACA64;
+    color: #2D1700;
+    box-shadow: 0 2px 15px #472B28;
+    cursor: pointer;
+    transition: 0.7s;
+
+}
+nav button:hover{
+    box-shadow: 0 0 15px 10px #76e9b4;
+    transform: scale(1.1);
+}
+.hero{
+    padding: 20px 10px;
+    display:flex;
+    gap: 20px;
+}
+
+.hero .cta {
+    padding: 0px 10%;
+
+}
+.hero .cta h1{
+    font-size: 5rem;
+    color: #472B28;
+}
+.hero .cta h1 span{
+      position: relative;
+   left: 30%;
+}
+
+.hero .cta h1 .pastry{
+    color:#2D1700;
+ 
+}
+.hero .cta p{
+    padding: 20px 0px;
+    font-size:22px; 
+    color: #555;
+}
+.hero .cta button{
+    padding: 30px 70px;
+    background-color: #FACA64;
+    box-shadow: 0 2px #FACA64;
+    border: none;
+    border-radius: 50px;
+    color:#2D1700;
+    cursor: pointer;
+    position: relative;
+    left: 30%;
+    top: 5%;
+    font-size: 30px;
+}
+
+aside.post{
+    color: #000;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.post .one{
+    width: 300px;
+    height: 200px;
+    background-color: #472B28;
+    gap: 12px;
+    position: relative;
+    right: 15%;
+    top: 50px;
+    border-radius: 20px;
+    
+}
+
+.post .two{
+    width: 300px;
+    height: 200px;
+    background-color: #472B28;
+    gap: 12px;
+    position: relative;
+    right:1%;
+    top: 50px;
+    border-radius: 20px;
+    
+}
+
+.post .three{
+    width: 300px;
+    height: 200px;
+    background-color: #472B28;
+    gap: 12px;
+    position: relative;
+    left: 12%;
+    top: 50px;
+   
+
+    
+}
+
+.add{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 5px;
+    left: 40px;
+}
+
+.post .one img{
+width: 100%;
+height: 100%;
+border-radius: 20px;
+}
+.post .two img{
+width: 100%;
+height: 100%;
+border-radius: 20px;
+}
+.post .three img{
+width: 100%;
+height: 100%;
+border-radius: 20px;
+}

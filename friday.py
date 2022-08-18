@@ -1,8 +1,9 @@
 import random
 
-from desbankapp import update_transaction
 data = {}
 with open("trans.txt","r") as file:
+    data = eval(file.read())
+with open("class.txt", "r") as file:
     data = eval(file.read())
 
 def signup(details:dict, trans:dict):
@@ -24,11 +25,13 @@ def signup(details:dict, trans:dict):
                     "transaction_pin": trans_pin,
                     "balance" : 0}
 
+        trans[login_in] = []
+
 
     print(f"welcome {first_name} {second_name}, your account has been created. your account number is {code}. you can login to your account using your login pin: {login_pin}")
-    return details,trans
+    return details, trans
 
-def login(data:dict):
+def login(data: dict):
     print("WELCOME TO THE GEORG'S BANK\ninput your details")
     acc_num= input("Account number: ")
     login_pin= input("login pin: ")
@@ -85,7 +88,7 @@ def transfer(user_detail:dict, data:dict):
         print("Account Not Recognized")
         return user_detail, data, amount, beneficiary
 
-def update_transcation(trans_data:dict, acc_num:str, trans_type:str, action:str, amount:float):
+def update_transaction(trans_data:dict, acc_num:str, trans_type:str, action:str, amount:float):
     trans_detail = {
         "amount": amount,
         "action": action,
@@ -99,9 +102,11 @@ print("WELCOME TO THE BANK")
 while True:
     print("select any option\n====1.login\n====2.signup\n====3.logout")
     choice= input(">>>>")
-
-    if choice =="1":
+    if choice =="2":
+        data, trans_data = signup(data, trans_data)
+    elif choice =="1":
         user_detail, acc_num = login(data)
+
 
         if user_detail:
             print("Welcome",user_detail["first_name"])
@@ -136,21 +141,38 @@ while True:
                     if len(login_pin) >= 5:
                         for i in range(5):
                             transcation = login_pin[i]
-                            print
-                            ("==================")
-                            print("Amount: #{transaction['amount']}".format)
-                            print()
- 
-
-                    
-
+                            print("==================")
+                            
+                            print(f"action: {transcation['action']}")
+                            print(f"Amount: # {transcation['amount']}")
+                            print(f"transaction_type: {transcation['trans_type']}")
+                        print("==================")
+                    else:
+                            for i in range(len(login_pin)):
+                                transaction = login_pin[i]
+                                print("================")
+                                print(f"Amount: #{transaction['amount']}")
+                                print(f"action: {transaction['action']}")
+                                print(f"transaction type: {transaction['trans-type']}")
+                            print("=================")
+                elif action == "6":
+                    print(f"Bye for now {user_detail['first_name']} ")
+                    break
+                else:
+                    print("invalid input")
     elif choice =="2":
         data, trans_data = signup(data, trans_data)
-
-
-
     elif choice == "3":
-        
+        print("\nBye!")
+        break
+    else:
+        print("\nInvalid input")
+
+with open("trans.txt", "w") as file:
+    file.write(str(data))
+with open("class.txt", "w") as file:
+    file.write(str(data))
+
 
 
 
