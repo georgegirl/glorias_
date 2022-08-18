@@ -28,5 +28,5 @@ def move():
 
     snake.append()
 
-    if
+
 
